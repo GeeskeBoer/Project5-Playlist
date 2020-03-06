@@ -30,7 +30,6 @@ class SongOverview extends React.Component {
       rating: "",
       songs: [
         this.state.song +
-          "" +
           this.state.artist +
           this.state.genre +
           this.state.rating
@@ -39,7 +38,7 @@ class SongOverview extends React.Component {
   }
 
   addSong = song => {
-    // doe iets om de state aan te passen
+    // doe iets om de state aan te passen songs={this.state.songs}
   };
 
   render() {
@@ -58,9 +57,8 @@ class SongOverview extends React.Component {
             <th className="song-row__item">Genre</th>
             <th className="song-row__item">Rating</th>
           </tr>
+          <SongList songs={this.state.songs} />
         </table>
-
-        <SongList songs={this.state.songs} />
       </div>
     );
   }

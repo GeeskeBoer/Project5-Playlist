@@ -41,7 +41,7 @@ function SongForm(props) {
           <option value="four">4</option>
           <option value="five">5</option>
         </select>
-        <button> Submit </button>
+        <button> Add song </button>
       </form>
     </div>
   );

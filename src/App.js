@@ -5,7 +5,7 @@ import SongOverview from "./components/SongOverview";
 function App() {
   return (
     <div className="App">
-      <header className="header">Mijn Playlist</header>
+      <header className="header">Lil' Playlist</header>
       <SongOverview />
     </div>
   );
